@@ -1,0 +1,150 @@
+/* style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #084245, #009688);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quiz Container */
+#quiz_container {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(145deg, #084245, #009688);
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: bounceIn 1s ease-out;
+}
+
+/* Question */
+#question {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Radio Inputs Container */
+#radio-inputs-container {
+    margin-bottom: 30px;
+}
+
+/* Radio Button Label */
+label {
+    display: block;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    accent-color: #fff; /* Custom radio color */
+}
+
+label:hover {
+    color: #b2dfdb;
+    transform: scale(1.05);
+}
+
+/* Button */
+button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: #fff;
+    background: linear-gradient(to right, #084245, #009688);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    outline: none;
+}
+
+button:hover {
+    background: linear-gradient(to right, #009688, #084245);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Result Container */
+#result_container {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(145deg, #084245, #009688);
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: bounceIn 1s ease-out;
+}
+
+/* Result Message */
+#result_message {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Restart Button */
+#restart_btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: #fff;
+    background: linear-gradient(to right, #00796b, #004d40);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    outline: none;
+}
+
+#restart_btn:hover {
+    background: linear-gradient(to right, #004d40, #00796b);
+    transform: translateY(-3px);
+}
+
+#restart_btn:active {
+    transform: translateY(1px);
+}
+
+/* Animations */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz_container">
+        <h1>TypeScript Quiz</h1>
+
+        <div>
+            <h2 id="question">Question</h2>
+        </div>
+
+        <div id="radio-inputs-container"></div>
+
+        <div class="flex justify-end">
+            <button id="next_btn">Next</button>
+        </div>
+    </div>
+    <div id="result_container" style="display: none; text-align: center;">
+        <h1 class="text-2xl">Results</h1>
+        <h2 id="result_message"></h2>
+        <button id="restart_btn" onclick="restartBtun">Restart Quiz</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
